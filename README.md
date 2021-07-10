@@ -2,5 +2,13 @@
 Generate artistic images using Neural Style Transfer Algorithm
 A link to the deployed webapp: [_A.I. Image generator_](https://ai-image-generator.herokuapp.com)
 
+## Usage
+* It is a Flask-based Web Application
+* To make this practical, I've uploaded pre-trained models of some common styles (Because training the model everytime one wants to use this app requires much more resouces)
+* You need to upload a content image and a style image of your choice.
+* Submit & wait for few seconds. The output image will appear o the screen 🎉
+* Enjoy generating several cool images 🎊
 
-This project is the implementation of the paper [_Image Style Transfer Using Convolutional Neural Networks_](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf)
+## References
+* This project is the implementation of the paper [_Image Style Transfer Using Convolutional Neural Networks_](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf)
+* Pre-trained models can be found [here](https://github.com/jcjohnson/fast-neural-style)
