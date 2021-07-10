@@ -1,0 +1,16 @@
+click
+cycler
+Flask
+gunicorn
+imutils
+itsdangerous
+Jinja2
+kiwisolver
+MarkupSafe
+matplotlib
+numpy
+opencv-python-headless
+pyparsing
+python-dateutil
+six
+Werkzeug

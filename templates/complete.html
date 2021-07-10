@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Result</title>
+	<link rel="stylesheet"  href= "{{ url_for('static',filename='styles.css') }}">
+
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	
+	.column {
+		float: left;
+		width: 50%;
+		padding: 5px;
+	}
+	
+	/* Clearfix (clear floats) */
+	.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	</style>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</head>
+<body>
+
+	<div>Upload Successful!</div>
+	<p class="lead">Generated Image Will Appear In Few Seconds</p>
+	<div class="frame">
+
+		<div class="row">
+			{% for image_name in image_names %}
+			<div class="column">
+				<div style="font-weight: 900; color: white;"><b>Original</b></div>
+				<img src="{{url_for('send_original_image', filename=image_name)}}" alt="Original Image" class="output_image">
+			</div>
+			<div class="column">
+				<div style="font-weight: 900; color: white;"><b>Generated</div>
+				<img src="{{url_for('send_processed_image', filename=image_name, selected_style=selected_style)}}" alt="Generated Image" class="output_image">
+			</div>
+			{% endfor %}
+		</div>
+
+		<!-- <button  class="btn" onClick="window.location.reload()">Submit Again</button> -->	
+		<button class="submit-btn btn" onclick="goBack()">Go Back</button>
+		<h5>©2021: Made by Abdur Rahman</h5>
+	</div>
+
+</body>
+</body>
+</html>

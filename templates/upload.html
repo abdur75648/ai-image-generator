@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="image" property="og:image" content="{{ url_for('static',filename='preview.jpg') }}">
+	<title>ai-image-generator</title>
+	<link rel="stylesheet"  href= "{{ url_for('static',filename='styles.css') }}">
+</head>
+<body>
+	<h3 class="rainbow">Generated Artistic Images</h3>
+	<h6 >(Using Neural Style Transfer Algorithms)</h6>
+	<p class="lead">Upload an image, select a style and generate :)</p>
+	<div class="frame">
+	<form id="file-upload-form" class="uploader" action="{{url_for('upload')}}" method= "POST" enctype="multipart/form-data">
+		<input id="file-upload" type="file" name="file" accept=".jpg,.png,.jpeg " hidden> 
+		<label for="file-upload" id="file-drag">
+			<div id="start">
+			  <i class="fa fa-upload" aria-hidden="true"></i>
+			  <div>Select an image or drag here</div>
+			  <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+			</div>
+		</label>
+		<div>
+			<label for="style" id="file-drag">
+			<div>Choose A Style To Apply:</div>
+			<select id="style" name="style">
+				<option value="Fire_Style_22000_Iterations.t7">Fire</option>
+				<option value="flame_style_4500.t7">Flame</option>
+				<option value="gold_black_2700.t7">Gold Black</option>
+				<option value="landscape_style_11600.t7">Landscape</option>
+				<option value="pink_style_1800.t7">Pink</option>
+				<option value="rain_style_iter_4000.t7">Rain</option>
+				<option value="starry_night_2500.t7">Starry Night</option>
+				<option value="triangle_style_1000.t7">Triangles</option>
+				
+	  		</select>
+			</label>
+		</div>
+		<br>
+		<br>
+		<button type="submit" class="submit-btn btn" value="Upload" name="Upload">Upload</button>
+	</form>
+	<h5>©2021: Made by Abdur Rahman</h5>
+	</div>
+
+		
+</body>
+</html>
