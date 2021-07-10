@@ -11,4 +11,5 @@ A link to the deployed webapp: [_A.I. Image generator_](https://ai-image-generat
 
 ## References
 * This project is the implementation of the paper [_Image Style Transfer Using Convolutional Neural Networks_](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf)
-* Pre-trained models can be found [here](https://github.com/jcjohnson/fast-neural-style)
+* Pre-trained models can be found [here](https://github.com/jcjohnson/fast-neural-style) & can be placed in static/models folder
+* A step-by-step guide is given in [_this article_](https://towardsdatascience.com/building-deploying-a-neural-style-transfer-app-with-pre-trained-models-661bbefc74cd)
