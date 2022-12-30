@@ -1,6 +1,7 @@
 # ai-image-generator
 Generate artistic images using Neural Style Transfer Algorithm
-A link to the deployed webapp: [_A.I. Image generator_](https://ai-image-generator.herokuapp.com)
+
+Try deployed webapp - [Heroku (Depcrecated)](https://ai-image-generator.herokuapp.com) | [Render (Latest)](https://ai-image-style-generator.onrender.com/)
 
 ## Usage
 * It is a Flask-based Web Application
