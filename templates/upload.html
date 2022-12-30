@@ -8,9 +8,9 @@
 	<link rel="stylesheet"  href= "{{ url_for('static',filename='styles.css') }}">
 </head>
 <body>
-	<h3 class="rainbow">Generated Artistic Images</h3>
+	<h3 class="rainbow">Generate Artistic Images</h3>
 	<h6 >(Using Neural Style Transfer Algorithms)</h6>
-	<p class="lead">Upload an image, select a style and generate :)</p>
+	<p class="lead">Upload an image, select a style and go :)</p>
 	<div class="frame">
 	<form id="file-upload-form" class="uploader" action="{{url_for('upload')}}" method= "POST" enctype="multipart/form-data">
 		<input id="file-upload" type="file" name="file" accept=".jpg,.png,.jpeg " hidden> 
@@ -42,9 +42,9 @@
 		</div>
 		<br>
 		<br>
-		<button type="submit" class="submit-btn btn" value="Upload" name="Upload">Upload</button>
+		<button type="submit" class="submit-btn btn" value="Upload" name="Upload">Generate</button>
 	</form>
-	<h5>©2021: Made by Abdur Rahman</h5>
+	<h5>Developed by Abdur Rahman, IIT Delhi</h5>
 	</div>
 
 		
